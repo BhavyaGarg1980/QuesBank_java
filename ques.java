@@ -789,26 +789,117 @@
 
 /////// QUES 28..................................................................
 
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         LinkedHashMap<Integer, String> students = new LinkedHashMap<>();
+//         // id , name + dname
+
+//         for(int i = 0; i < n; i++){
+//             int id = sc.nextInt();
+//             String name = sc.next();
+//             int did = sc.nextInt();
+//             String dname = sc.next();
+
+//             if(!students.containsKey(id)){
+//                 students.put(id, name + " " + dname);
+//             }
+//         }
+//         for(int id : students.keySet()){
+//             System.out.println(id + " " + students.get(id));
+//         }
+//     }
+// }
+
+
+/////// QUES 29........................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
+//         for(int i = 0; i < n; i++){
+//             int cid = sc.nextInt();
+//             int fid = sc.nextInt();
+//             String fname = sc.next();
+//             int roomno = sc.nextInt();
+
+//             if(!map.containsKey(fid)){
+//                 map.put(fid, fname + " " + roomno);
+//             }
+//         }
+//         for(int id : map.keySet()){
+//             System.out.println(id + " " + map.get(id));
+//         }
+//     }
+// }
+
+
+/////// QUES 30........................................................................
+
+// import java.util.*;
+// import java.time.LocalDate;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String date = sc.nextLine();
+//         int totalnights = sc.nextInt();
+//         int stayed = sc.nextInt();
+
+//         LocalDate checkin = LocalDate.parse(date);
+//         LocalDate checkout = checkin.plusDays(totalnights);
+//         int remaining = totalnights - stayed;
+//         System.out.println(checkout);
+//         System.out.println(remaining);
+//         System.out.println(checkout.getYear());
+//         System.out.println(checkout.getMonthValue());
+
+//     }
+// }
+
+/////// QUES 31........................................................................
+
+// import java.util.*;
+// import java.time.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String date = sc.nextLine();
+//         String time = sc.nextLine();
+//         int duration = sc.nextInt();
+
+//         LocalDate examdate = LocalDate.parse(date);
+//         LocalTime starttime = LocalTime.parse(time);
+//         LocalDateTime start = LocalDateTime.of(examdate,starttime);
+//         LocalDateTime end = start.plusMinutes(duration);
+
+//         System.out.println(end.toLocalDate());
+//         System.out.println(end.toLocalTime());
+//         System.out.println(end.getYear());
+//         System.out.println(end.getMonthValue());
+//         System.out.println(end.getHour());
+//     }
+// }
+
+
+///// QUES 32....................................................................
+
 import java.util.*;
 public class ques{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        LinkedHashMap<Integer, String> students = new LinkedHashMap<>();
-        // id , name + dname
-
+        double[] arr = new double[n];
         for(int i = 0; i < n; i++){
-            int id = sc.nextInt();
-            String name = sc.next();
-            int did = sc.nextInt();
-            String dname = sc.next();
-
-            if(!students.containsKey(id)){
-                students.put(id, name + " " + dname);
-            }
+            arr[i] = sc.nextInt();
         }
-        for(int id : students.keySet()){
-            System.out.println(id + " " + students.get(id));
+        for(int i = 0; i < n; i++){
+            arr[i] = arr[i] * 1.10;
+            System.out.printf("%.2f ", arr[i]);
         }
     }
 }
