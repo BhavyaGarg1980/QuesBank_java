@@ -692,25 +692,25 @@
 
 ///// QUES 26......................................................
 
-import java.util.*;
-public class ques {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        ArrayList<String> list = new ArrayList<>();
-        for(int i = 0; i < n; i++){
-            int id = sc.nextInt();
-            String book = sc.next();
-            String[] arr = book.split(",");
-            for(int j = 0; j < arr.length; j++){
-                list.add(id + " " + arr[j]);
-            }
-        }
-        for(String x : list){
-            System.out.println(x);
-        }
-    }
-}
+// import java.util.*;
+// public class ques {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         ArrayList<String> list = new ArrayList<>();
+//         for(int i = 0; i < n; i++){
+//             int id = sc.nextInt();
+//             String book = sc.next();
+//             String[] arr = book.split(",");
+//             for(int j = 0; j < arr.length; j++){
+//                 list.add(id + " " + arr[j]);
+//             }
+//         }
+//         for(String x : list){
+//             System.out.println(x);
+//         }
+//     }
+// }
 
 
 ////// QUES 27........................................................
@@ -720,12 +720,95 @@ public class ques {
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         int n = sc.nextInt();
+//         LinkedHashMap<Integer, String> name = new LinkedHashMap<>(); //id, name
+//         LinkedHashMap<Integer, Integer> count = new LinkedHashMap<>(); //id, count
+
 //         for(int i = 0; i < n; i++){
 //             int pid = sc.nextInt();
 //             String pname = sc.next();
 //             int tid = sc.nextInt();
-//             String tname = sc.nextLine();
-//             String dname = sc.nextLine();
+//             String tname = sc.next();
+//             String dname = sc.next();
+
+//             name.put(pid, pname);
+//             if(count.containsKey(pid)){
+//                 count.put(pid, count.get(pid) + 1);
+//             }
+//             else{
+//                 count.put(pid, 1);
+//             }
+//         }
+//         for(int id : name.keySet()){
+//             System.out.println(id + " " + name.get(id) + " " + count.get(id));
 //         }
 //     }
 // }
+
+/// USING ARRAYS
+// import java.util.*;
+// public class ques {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         int[] patientId = new int[n];
+//         String[] patientName = new String[n];
+//         int[] count = new int[n];
+//         int unique = 0;
+
+//         for (int i = 0; i < n; i++) {
+//             int id = sc.nextInt();
+//             String name = sc.next();
+//             int treatmentId = sc.nextInt();
+//             String treatmentName = sc.next();
+//             String doctorName = sc.next();
+
+//             int index = -1;
+//             for (int j = 0; j < unique; j++) {
+//                 if (patientId[j] == id) {
+//                     index = j;
+//                     break;
+//                 }
+//             }
+//             if (index == -1) {
+//                 patientId[unique] = id;
+//                 patientName[unique] = name;
+//                 count[unique] = 1;
+//                 unique++;
+//             } else {
+//                 count[index]++;
+//             }
+//         }
+//         for (int i = 0; i < unique; i++) {
+//             System.out.println(patientId[i] + " " + patientName[i] + " " + count[i]);
+//         }
+//     }
+// }
+
+
+
+/////// QUES 28..................................................................
+
+import java.util.*;
+public class ques{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedHashMap<Integer, String> students = new LinkedHashMap<>();
+        // id , name + dname
+
+        for(int i = 0; i < n; i++){
+            int id = sc.nextInt();
+            String name = sc.next();
+            int did = sc.nextInt();
+            String dname = sc.next();
+
+            if(!students.containsKey(id)){
+                students.put(id, name + " " + dname);
+            }
+        }
+        for(int id : students.keySet()){
+            System.out.println(id + " " + students.get(id));
+        }
+    }
+}
