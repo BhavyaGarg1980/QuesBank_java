@@ -1176,14 +1176,111 @@
 
 ///// QUES 47..................................................................................
 
-import java.util.*;
-public class ques{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for(int i = 0; i < n; i++){
-            String name = sc.next();
-            System.out.print(name.toUpperCase() + " ");
-        }
-    }
-}
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 0; i < n; i++){
+//             String name = sc.next();
+//             System.out.print(name.toUpperCase() + " ");
+//         }
+//     }
+// }
+
+
+
+//// QUES 48...........................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         for(int i = 0; i < n; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int morethan50 = 0;
+//         for(int i = 0; i < n; i++){
+//             if(arr[i] >= 50) morethan50++;
+//         }
+//         System.out.println(morethan50);
+//         for(int i = 0; i < n; i++){
+//             arr[i] += 10;
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+///// QUES 49................................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         System.out.println("tickets processed: " + n);
+//         System.out.println("processing completed");
+//     }
+// }
+
+
+//// QUES 50......................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int id = sc.nextInt();
+//         System.out.println("order " + id + " processing");
+//     }
+// }
+
+
+
+//// QUES 51............................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 0; i < n; i++){
+//             int rate = sc.nextInt();
+//             System.out.println("monitoring: " + rate);
+//         }
+//     }
+// }
+
+
+
+///// QUES 52......................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int initial = sc.nextInt();
+//         int amt1 = sc.nextInt();
+//         int amt2 = sc.nextInt();
+//         if(amt1 > initial) System.out.println("insufficient balance");
+//         else {
+//             int rem = initial - (amt1+amt2);
+//             System.out.println(rem);
+//         }
+//     }
+// }
+
+
+///// QUES 53...............................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int tkt = sc.nextInt();
+//         int booking = sc.nextInt();
+//     }
+// }
