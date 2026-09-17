@@ -888,18 +888,183 @@
 
 ///// QUES 32....................................................................
 
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         double[] arr = new double[n];
+//         for(int i = 0; i < n; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         for(int i = 0; i < n; i++){
+//             arr[i] = arr[i] * 1.10;
+//             System.out.printf("%.2f ", arr[i]);
+//         }
+//     }
+// }
+
+
+
+///// QUES 33...........................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         for(int i = 0; i < n; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         for(int i = 0; i < n; i++){
+//             arr[i] = arr[i] * 2 + 10;
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+//// QUES 34.........................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         for(int i = 0; i < n; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         for(int i = 0; i < n; i++){
+//             if(arr[i] >= 20 && arr[i] <= 80){
+//                 System.out.print("safe ");
+//             }
+//             else{
+//                 System.out.print("unsafe ");
+//             }
+//         }
+//     }
+// }
+
+
+///// QUES 35.........................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] id = new int[n];
+//         String[] name = new String[n];
+//         for(int i = 0; i < n; i++){
+//             id[i] = sc.nextInt();
+//             name[i] = sc.next();
+//         }
+//         int searchid = sc.nextInt();
+//         boolean found = false;
+//         for(int i = 0; i < n; i++){
+//             if(id[i] == searchid){
+//                 System.out.println(name[i]);
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         if(!found) System.out.println("not found");
+//     }
+// }
+
+
+//// QUES 36.......................................................................
+
+// import java.util.*;
+// import java.time.*;
+// import java.time.temporal.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String startdate = sc.nextLine();
+//         String enddate = sc.nextLine();
+//         LocalDate start = LocalDate.parse(startdate);
+//         LocalDate end = LocalDate.parse(enddate);
+//         long remaining = ChronoUnit.DAYS.between(start,end);
+//         System.out.print(remaining);
+//     }
+// }
+
+
+//// QUES 37........................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         int[] arr = new int[3];
+//         for(int i = 0; i < 3; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         System.out.print(a + " " + b + " " + c);
+//         System.out.println();
+
+//         for(int i = 0; i < 3; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+
+//// QUES 38.......................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int[] arr = new int[3];
+//         for(int i = 0; i < 3; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int total = 0;
+//         for(int i = 0; i < 3; i++){
+//             total += arr[i];
+//         }
+//         System.out.print(total);
+//     }
+// }
+
+
+//// QUES 39..........................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 0; i < n; i++){
+//             String temp = new String("Temp");
+//         }
+//         System.gc();
+//         System.out.println("garbage collection requested");
+//     }
+// }
+
+
+
+////  QUES 40.................................................................................
+
 import java.util.*;
 public class ques{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        double[] arr = new double[n];
-        for(int i = 0; i < n; i++){
-            arr[i] = sc.nextInt();
-        }
-        for(int i = 0; i < n; i++){
-            arr[i] = arr[i] * 1.10;
-            System.out.printf("%.2f ", arr[i]);
-        }
+        int basic = sc.nextInt();
+        int allowance = sc.nextInt();
+        int deduct = sc.nextInt();
+        int finalS = basic + allowance - deduct;
+        System.out.print(finalS);
     }
 }
