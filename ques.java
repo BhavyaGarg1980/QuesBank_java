@@ -1057,14 +1057,133 @@
 
 ////  QUES 40.................................................................................
 
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int basic = sc.nextInt();
+//         int allowance = sc.nextInt();
+//         int deduct = sc.nextInt();
+//         int finalS = basic + allowance - deduct;
+//         System.out.print(finalS);
+//     }
+// }
+
+
+
+//// QUES 41.......................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 0; i < n; i++){
+//             int num = sc.nextInt();
+//             System.out.print(num * num + " ");
+//         }
+//     }
+// }
+
+
+//// QUES 42............................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int sum = 0;
+//         for(int i = 0; i < n; i++){
+//             int num = sc.nextInt();
+//             sum += num;
+//         }
+//         System.out.print(sum);
+//     }
+// }
+
+
+//// QUES 43.........................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 0; i < n; i++){
+//             int temp = sc.nextInt();
+//             int newtemp = temp + 2;
+//             System.out.print(newtemp + " ");
+//         }
+//     }
+// }
+
+
+
+//// QUES 44...........................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int sum = 0;
+//         for(int i = 0; i < n; i++){
+//             int quantity = sc.nextInt();
+//             int price = sc.nextInt();
+//             int total = quantity * price;
+//             sum += total;
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+
+
+///// QUES 45.................................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         if(n == 0) System.out.print("0");
+//         else if(n <= 2) System.out.print(n * 20);
+//         else if(n > 2) System.out.print(n * 40);
+//     }
+// }
+
+
+//// QUES 46................................................................................................
+
+// import java.util.*;
+// public class ques{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int amount = sc.nextInt();
+//         int value = sc.nextInt();
+//         String op = sc.next();
+//         if(op.equals("ADD")){
+//             System.out.println(amount + value);
+//         }
+//         if(op.equals("MULTIPLY")){
+//             System.out.println(amount * value);
+//         }
+//     }
+// }
+
+
+
+///// QUES 47..................................................................................
+
 import java.util.*;
 public class ques{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int basic = sc.nextInt();
-        int allowance = sc.nextInt();
-        int deduct = sc.nextInt();
-        int finalS = basic + allowance - deduct;
-        System.out.print(finalS);
+        int n = sc.nextInt();
+        for(int i = 0; i < n; i++){
+            String name = sc.next();
+            System.out.print(name.toUpperCase() + " ");
+        }
     }
 }
